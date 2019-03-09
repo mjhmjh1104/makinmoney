@@ -8,7 +8,7 @@ app.get('/', function(req, res) {
   res.redirect('/monero.html');
 });
 
-var PORT = process.env.PORT | 3000;
-app.listen(PORT, function(req, res) {
+var port = process.env.PORT || 3000;
+app.listen(port, function(req, res) {
   console.log('Server On!');
 });
